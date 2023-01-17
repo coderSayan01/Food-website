@@ -1,0 +1,214 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 100px;
+}
+/* Navigation bar styles */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+/* Nav bar: logo and image*/
+#logo{
+    margin: 23px 29px;
+}
+#logo img{
+    margin: 2px 3px;
+    height:50px;
+    width: 50px;
+}
+/* list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+}
+#navbar ul li a{
+    color: rgb(220, 220, 220);
+    font-family: 'Acme', sans-serif;
+    display:block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+/* Home decoration */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 80px;
+    justify-content: center;
+    align-items:center;
+    height: 328px;
+}
+#home::before{
+    content: "";
+    background: url('pic4.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height: 77%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home p{
+    text-align: center;
+    font-size: 20px;
+}
+/* utility classes */
+
+.center{
+    font-family: 'Acme', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.heading{
+    font-family: 'Acme', sans-serif;
+    font-size: 50px;
+    padding: 18px;
+    text-align: center;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 12px;
+    background-color: brown;
+    border: 2px solid rgb(255, 89, 0);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.primary-center{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding:2px;
+}
+.secondary-center{
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    padding:14px;
+    font-size: 1.3rem;
+}
+
+.primary-cente{
+    font-family: 'Acme', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding:20px;
+}
+
+
+/* Services section */
+#services{
+    margin: 20px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 9px 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: rgb(221, 197, 197);
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin:auto;
+}
+
+/* Client section */
+#client-section{
+    height:100%;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 32%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    height:100px;
+    width: 100px;
+}
+.clients-items{
+    padding:20px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 13px;
+}
+#contact-box form{
+    width:50%;
+}
+#contact-box label{
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+}
+
+/* footer part */
+footer{
+    background-color: black;
+    color: white;
+}
